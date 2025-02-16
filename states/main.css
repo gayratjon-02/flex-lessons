@@ -1,0 +1,16 @@
+a{
+    color: red;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(170, 153, 153);
+}
+a:hover{
+    color: green;
+    background-color: aqua;    
+}
+a:active{
+    color: burlywood;
+}
+/* a:visited{
+    color: orange;
+} */

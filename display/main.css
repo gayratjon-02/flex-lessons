@@ -1,0 +1,73 @@
+/* Umumiy stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar stil */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative; /* Dropdown menyu uchun */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Dropdown menyu stil */
+.dropdown-content {
+    display: none; /* Boshlang'ich holatda yashirilgan */
+    position: absolute;
+    top: 100%; /* "Gallery" linkidan pastda */
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Boshlang'ich holatda shaffof */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Sekinlik bilan chiqish */
+    transform: translateY(-10px); /* Boshlang'ich holatda yuqoriga siljigan */
+}
+
+.dropdown-content p {
+    color: white;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Hover qilganda dropdown menyuni ko'rsatish */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* To'liq ko'rinadi */
+    transform: translateY(0); /* Pastga siljidi */
+}

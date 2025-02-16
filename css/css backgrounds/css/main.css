@@ -1,0 +1,22 @@
+body{
+    background: url("../images/images.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.borderBer{
+    /* width: 600px;
+    height: 600px;
+    background-color: red;
+    border: 11px  solid orange;
+    border-radius: 20px  200px; */
+}
+.borderbOx{
+    width: auto;
+    height: 200px;
+    background-color: orange;
+    margin: 20px 10px 30px;
+    padding: 20px 15px 10px;
+    box-sizing: border-box;
+
+}
